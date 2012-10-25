@@ -69,7 +69,7 @@ td { vertical-align: top; }
 /* ===== general styles ========================================================= */
 body {
 	font-family: 'Montserrat Alternates', sans-serif;
-	background: #efefef;
+	background: #000;
 }
 
 #container {
@@ -113,13 +113,7 @@ nav.top ul {
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
-
-  #main aside {
-    width: 200px;
-    margin-right: 10px;
-    float: left;
-  } 
-  
+ 
   #main section.content {
     width: 730px;
     float: left;
@@ -130,58 +124,97 @@ footer {
 	border-top: 1px dotted #efefef;
 }
 
-/* ===== gallery image styles =================================================== */
-
-		ul.commands { 
-			list-style: none; 
-			list-style-image: none; 
-			margin: 0; 
-			padding: 0;
-			text-align: center; 
-		}
-
-			ul.commands li { 
-				display: inline-block;
-				font-size: 30px;
-				margin: 0 10px;
-			}
-
-			ul.commands li.index {
-				margin: 0 15px 0 10px; 
-			}
-
-				ul.commands li a:hover { 
-					text-decoration: none;
-				}
+/* ===== media queries =================================================== */
 
 
-		.photo_section img.image {
-			margin: 15px auto;
-			display: block;
-		}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 
-		p.description {
-			width: 500px;
-			margin: 0 auto;
-		}
-
-
-
-
-
-.rotate {
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-	rotation:-90deg;				
+	body {
+		background: #000;
+	}
 }
 
-/* ===== media with different viewport classes ============================================ */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+	body {
+		background: #111;
+	}
 }
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+	body {
+		background: #333;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+	body {
+		background: #555;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+	body {
+		background: #777;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+	body {
+		background: #999;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+
+	body {
+		background: #bbb;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+
+	body {
+		background: #ddd;
+	}
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+	body {
+		background: #fff;
+	}
+}
+
 
 /* ===== non-semantic helper classes ============================================ */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
