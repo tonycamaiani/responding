@@ -68,19 +68,23 @@ td { vertical-align: top; }
 
 /* ===== general styles ========================================================= */
 body {
-	font-family: 'Asap', sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
 	background: #efefef;
 }
 
 #container {
-	width: 960px;
+	max-width: 61.75em;      /* 988px / 16px = 61.75em */
 	margin: 0 auto;
 	background: #fff;
 }
 
 header, nav, #main, footer {
-	padding: 10px;
+	padding: 0 0 10px;
 }
+
+	header img {
+		width: 100%;
+	}
 
 	header h1 {
 		text-align: center;
