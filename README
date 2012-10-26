@@ -2,15 +2,20 @@ Responding
 a responsive playground
 
 created by Tony Camaiani
-tony.camaiani.it
+http://tony.camaiani.it
 
-tests with fluid layout and media queries to create responsive web interfaces
+doing tests and having fun with fluid layout and media queries
+to create responsive web interfaces
+
+
+
 
 references:
 http://www.alistapart.com/articles/responsive-web-design/
 http://www.alistapart.com/articles/fluidgrids/
 http://www.w3.org/TR/css3-mediaqueries/
 http://mobile.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/
+
 
 examples:
 http://mediaqueri.es/
