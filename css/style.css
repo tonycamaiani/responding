@@ -63,156 +63,171 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; } 
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 
 /* ===== general styles ========================================================= */
 body {
-	font-family: 'Montserrat Alternates', sans-serif;
-	background: #000;
+  font-family: 'Montserrat Alternates', sans-serif;
+  background: #000;
 }
 
 #container {
-	max-width: 61.75em;      /* 988px / 16px = 61.75em */
-	margin: 0 auto;
-	background: #fff;
+  max-width: 61.75em;      /* 988px / 16px = 61.75em */
+  margin: 0 auto;
+  background: #fff;
 }
 
 header, nav, #main, footer {
-	padding: 0 0 10px;
+  padding: 0 0 10px;
 }
 
-	header img {
-		width: 100%;
-	}
+  header img {
+    width: 100%;
+  }
 
-	header h1 {
-		text-align: center;
-		font-size: 24px;
-		margin: 25px 0 5px;
-	}
+  header h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 90px;
+    margin: 0px 0 5px;
+    letter-spacing: 2px;
+  }
 
-	header h2 {
-		font-weight: normal;
-		text-align: center;
-		font-size: 18px;
-		margin: 5px 0;
-	}
+  header h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+  }
 
 nav.top ul {
-	text-align: center;
-	border-bottom: 1px dotted #efefef;
+  text-align: center;
+  border-bottom: 1px dotted #efefef;
 }
 
-	nav.top ul li{
-		display: inline;
-		margin: 0 10px 0 0;
-	}
+  nav.top ul li{
+    display: inline;
+    margin: 0 10px 0 0;
+  }
 
 #main {
-	margin-top: 25px;
-	margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
- 
+
   #main section.content {
     width: 730px;
     float: left;
-  }   
+  }
 
 footer {
-	text-align: center;
-	border-top: 1px dotted #efefef;
+  text-align: center;
+  border-top: 1px dotted #efefef;
 }
 
 /* ===== media queries =================================================== */
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
-	body {
-		background: #000;
-	}
+  body {
+    background: #000;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen 
+@media only screen
 and (min-width : 321px) {
 
-	body {
-		background: #111;
-	}
+  body {
+    background: #111;
+  }
+
+  header h1 {
+    font-size: 570%;
+    margin: 0px 0 5px;
+    letter-spacing: 2px;
+  }
+
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen 
+@media only screen
 and (max-width : 320px) {
 
-	body {
-		background: #333;
-	}
+  body {
+    background: #333;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 
-	body {
-		background: #555;
-	}
+  body {
+    background: #555;
+  }
 }
 
 /* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : landscape) {
 
-	body {
-		background: #777;
-	}
+  body {
+    background: #777;
+  }
 }
 
 /* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
 
-	body {
-		background: #999;
-	}
+  body {
+    background: #999;
+  }
 }
 
 /* Desktops and laptops ----------- */
-@media only screen 
+@media only screen
 and (min-width : 1224px) {
 
-	body {
-		background: #bbb;
-	}
+  body {
+    background: #bbb;
+  }
+
+  header h1 {
+    font-size: 90px;
+  }
+
 }
 
 /* Large screens ----------- */
-@media only screen 
+@media only screen
 and (min-width : 1824px) {
 
-	body {
-		background: #ddd;
-	}
+  body {
+    background: #ddd;
+  }
 }
+
 
 /* iPhone 4 ----------- */
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 
-	body {
-		background: #fff;
-	}
+  body {
+    background: #fff;
+  }
 }
 
 
@@ -232,15 +247,15 @@ only screen and (min-device-pixel-ratio : 1.5) {
 /* ===== media queries ========================================================== */
 @media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */ }
 @media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */ }
-/* ===== print styles ========================================================== */ 
+/* ===== print styles ========================================================== */
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } 
+  thead { display: table-header-group; }
   tr, img { page-break-inside: avoid; }
   img { max-width: 100% !important; }
   @page { margin: 0.5cm; }
